@@ -1,10 +1,9 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 import "./Container.css";
 import Search from "./Search";
-import TodayForecast from "./TodayForecast";
-import Description from "./Description";
-import Forecast from "./Forecast";
+
 function App() {
   return (
     <div className="App">
@@ -12,11 +11,8 @@ function App() {
         <div className="container">
         <div className="border-style">
           <Search />
-          <h1>CITY</h1>
-          <TodayForecast />
-          <Description />
-          <Forecast />
-          </div>
+          <a href=""
+        </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import "./Container.css";
+import "./Forecast.css";
 
 
 const Search = (props) => {
@@ -36,10 +37,22 @@ const Search = (props) => {
 
     let form = (
       <form onSubmit={HandleSubmit}>
+         <button type="submit" class="btn btn-link" id="geolocation">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="grey"
+            class="bi bi-geo-alt-fill text-center"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+          </svg>
+        </button>
         <input
           type="search"
           id="search-text"
-          className="form control placeholder col-12 text-center"
+          className="form control placeholder bg-transparent col-9 text-center"
           placeholder="Enter a city..."
           autoComplete="off"
           onChange={Searching}
@@ -56,18 +69,6 @@ const Search = (props) => {
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </button>
-        <button type="submit" class="btn btn-link" id="geolocation">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            fill="grey"
-            class="bi bi-geo-alt-fill text-center"
-            viewBox="0 0 16 16"
-          >
-            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-          </svg>
-        </button>
      </form>);
    
       if (searchSubmit) {
@@ -77,8 +78,8 @@ const Search = (props) => {
             <h3>{forecast.city}</h3>
             <img className='icon-1' src={forecast.icon} alt={forecast.description}/>
             <h1>{Math.round(forecast.temperature)}ºC</h1>
-            <h2> {props.dia}</h2>
             <h5>{forecast.description}</h5>
+            <div className="Forecast-li">
             <div className="Ul-description">
           <ul>
             <li>{forecast.wind} km/h</li>
@@ -92,6 +93,7 @@ const Search = (props) => {
             <li>{forecast.maximum}º</li>
             <li>Maximum</li>
           </ul>
+          </div>
           </div>
          </div>
         );
