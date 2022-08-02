@@ -1,0 +1,33 @@
+
+  .border-style {
+    border: coral 1px solid;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 35px;
+  }
+  .container-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .icon-form {
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+  #search-text {
+    border: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .Ul-description {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .Forecast-li {
+    display: flex;
+    justify-content: center;
+  }
