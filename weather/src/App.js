@@ -11,9 +11,13 @@ function App() {
         <div className="container">
         <div className="border-style">
           <Search />
-          <a href=""
         </div>
         </div>
+        <div class="container">
+         <small class="weather-link">
+         <a href="https://github.com/Dianab177/React-Weather-App.git" target="_blank" title="link to github">Open-source code</a>, by <a href="https://www.linkedin.com/in/dianaborrajo/">Diana Borrajo</a> 
+         </small>
+         </div>
       </div>
     </div>
   );

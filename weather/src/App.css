@@ -12,6 +12,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.weather-link{
+    color: coral;
+    font-size: 1rem;
+}
+a{
+  color: coral;
+  font-size: 1rem;
+}
 
 .App-header {
   background-color: #282c34;
