@@ -19,15 +19,5 @@
     border: none;
   }
   
-  li {
-    list-style: none;
-  }
-  .Ul-description {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .Forecast-li {
-    display: flex;
-    justify-content: center;
-  }
+ 
+ 
