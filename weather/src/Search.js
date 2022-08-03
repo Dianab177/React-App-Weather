@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Container.css";
 import "./Search.css";
 import "./Forecast.css";
+import Forecast from './Forecast';
 
 
 const Search = (props) => {
@@ -82,21 +83,24 @@ const Search = (props) => {
             <h5>{forecast.description}</h5>
             <div className="Forecast-li">
             <div className="Ul-description">
-          <ul>
-            <li>{forecast.wind} km/h</li>
-            <li>Wind</li>
-          </ul>
-          <ul>
-            <li>{forecast.humidity}%</li>
-            <li>Humidity</li>
-          </ul>
-          <ul>
-            <li>{forecast.maximum}º</li>
-            <li>Maximum</li>
-          </ul>
-          </div>
-          </div>
-         </div>
+               <ul>
+                 <li>{forecast.wind} km/h</li>
+                 <li>Wind</li>
+               </ul>
+                <ul>
+                 <li>{forecast.humidity}%</li>
+                 <li>Humidity</li>
+                </ul>
+                <ul>
+                 <li>{forecast.maximum}º</li>
+                 <li>Maximum</li>
+                </ul>
+               </div>
+              </div>
+              <div className='forecast-list'>
+               <Forecast/>
+               </div>
+             </div>
         );
         
       } else{
