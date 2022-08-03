@@ -4,6 +4,7 @@ import "./Container.css";
 import "./Search.css";
 import "./Forecast.css";
 import Forecast from './Forecast';
+import Date from "./Date";
 
 
 const Search = (props) => {
@@ -81,6 +82,7 @@ const Search = (props) => {
             <img className='icon-1' src={forecast.icon} alt={forecast.description}/>
             <h1>{Math.round(forecast.temperature)}ºC</h1>
             <h5>{forecast.description}</h5>
+            <Date/>
             <div className="Forecast-li">
             <div className="Ul-description">
                <ul>
