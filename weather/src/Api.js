@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Api = () => {
     let apiKey = "094780c710fa4efd669f0df8c3991927";

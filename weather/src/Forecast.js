@@ -1,4 +1,5 @@
 import React from 'react';
+import Api from "./Api";
 import "./Forecast.css";
 
 const Forecast = () => {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import "./Container.css";
+import "./Search.css";
 import "./Forecast.css";
 
 
@@ -36,7 +37,7 @@ const Search = (props) => {
    }
 
     let form = (
-      <form onSubmit={HandleSubmit}>
+      <form className='search' onSubmit={HandleSubmit}>
          <button type="submit" class="btn btn-link" id="geolocation">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@ const Search = (props) => {
         <input
           type="search"
           id="search-text"
-          className="form control placeholder bg-transparent col-9 text-center"
+          className="form control col-9 placeholder text-white bg-dark text-center"
           placeholder="Enter a city..."
           autoComplete="off"
           onChange={Searching}
